@@ -698,10 +698,12 @@
               class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start"
             >
               <a
-                href="tel:+393500946931"
-                class="btn btn-outline-primary btn-sm rounded-pill"
+                href="https://wa.me/393500946931"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-success btn-sm rounded-pill"
               >
-                <i class="fa-solid fa-phone me-1"></i> +39 3500 946931
+                <i class="fa-brands fa-whatsapp me-1 fs-6 align-middle"></i> +39 3500 946931
               </a>
               <button
                 onclick="
@@ -2051,7 +2053,9 @@ candidate = ITProfessional()
           // Set UI to loading state
           generateBtn.disabled = true;
           generateBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Generating...';
-          outputDiv.innerHTML = `<div class="text-center py-4"><div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-2 text-muted small">Gemini AI is crafting a personalized pitch based on Eyasin's CV...</p></div>`;
+          
+          // FIXED: Correctly escaped "Eyasin's" using backticks and backslash to prevent syntax errors
+          outputDiv.innerHTML = `<div class="text-center py-4"><div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-2 text-muted small">Gemini AI is crafting a personalized pitch based on Eyasin\'s CV...</p></div>`;
 
           // Construct the Prompt instructing the LLM
           const prompt = `You are Eyasin Ahmed Dipu, an IT Support Specialist & Network Technician based in Cagliari, Italy. 
