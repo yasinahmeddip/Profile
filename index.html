@@ -5,7 +5,7 @@
       ===============================================================
       ONLINE DIGITAL CV & PORTFOLIO
       Name: Eyasin Ahmed Dipu
-      Role: IT Technician | Networking | CCTV & Web Dev
+      Role: IT Support Specialist | Network Technician
       Location: Cagliari, Sardegna, Italy
       Technologies: HTML5, CSS3, Bootstrap 5, JavaScript, Python
       ===============================================================
@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Digital CV of Eyasin Ahmed Dipu - IT Support Technician, Networking Specialist & Web Developer in Cagliari, Italy"
+      content="Digital CV of Eyasin Ahmed Dipu - IT Support Specialist & Network Technician in Cagliari, Italy"
     />
     <meta name="author" content="Eyasin Ahmed Dipu" />
     <title>Eyasin Ahmed Dipu | Digital CV & Portfolio</title>
@@ -624,15 +624,17 @@
           >
             <i class="fa-solid fa-moon" id="themeIcon"></i>
           </button>
-          <!-- Print CV Button -->
-          <button
-            onclick="window.print()"
-            class="btn btn-primary btn-sm rounded-pill px-3 d-flex align-items-center gap-2"
-            title="Print or Save as PDF"
+          <!-- Download CV Button -->
+          <!-- Make sure "Eyasin Ahmed dipu Cv.pdf" is in the same folder as this index.html file -->
+          <a
+            href="Eyasin Ahmed dipu Cv.pdf" 
+            download="Eyasin Ahmed dipu Cv.pdf"
+            class="btn btn-primary btn-sm rounded-pill px-3 d-flex align-items-center gap-2 text-decoration-none text-white"
+            title="Download CV as PDF"
           >
-            <i class="fa-solid fa-print"></i>
-            <span class="d-none d-sm-inline">Print CV</span>
-          </button>
+            <i class="fa-solid fa-download"></i>
+            <span class="d-none d-sm-inline">Download CV</span>
+          </a>
           <button
             class="navbar-toggler border-0"
             type="button"
@@ -648,10 +650,10 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#experience">Experience</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -681,18 +683,14 @@
             </div>
             <h1 class="display-5 fw-bold mb-1">EYASIN AHMED DIPU</h1>
             <h2 class="h5 text-primary fw-semibold mb-3">
-              <i class="fa-solid fa-screwdriver-wrench me-1"></i> IT Technician
-              | Networking | CCTV & Web Development
+              <i class="fa-solid fa-screwdriver-wrench me-1"></i> IT Support Specialist | Network Technician
             </h2>
 
             <p class="lead fs-6 text-body-secondary mb-4 col-xl-11">
-              IT Support Technician with hands-on experience in hardware and
-              software troubleshooting, networking, CCTV systems, and technical
-              support. Skilled in computer maintenance, system installation, and
-              user support, with additional knowledge of web development using
-              HTML, CSS, Bootstrap, JavaScript, and Python. Seeking an
-              opportunity to grow and contribute in a professional IT
-              environment in Italy.
+              Motivated IT Support Technician with hands-on experience in hardware
+              diagnostics, network troubleshooting, and CCTV systems. Skilled in
+              Windows environments, TCP/IP, Cisco routing/switching basics, and end-user support. Seeking an IT Support or Network Technician role in Italy to
+              apply technical skills and ensure reliable system operations.
             </p>
 
             <!-- Contact Badges / Quick Action Buttons -->
@@ -735,13 +733,21 @@
               >
                 <i class="fa-brands fa-github me-1"></i> GitHub
               </a>
+              <button
+                type="button"
+                class="btn btn-info btn-sm rounded-pill text-white fw-medium shadow-sm"
+                data-bs-toggle="modal"
+                data-bs-target="#aiPitchModal"
+              >
+                <i class="fa-solid fa-wand-magic-sparkles me-1"></i> AI Pitch Generator
+              </button>
             </div>
           </div>
           <div class="col-lg-3 text-center">
             <div class="avatar-container">
               <!-- Profile Image (Placeholder / User image path) -->
               <img
-                src="Profilee.png"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
                 alt="Eyasin Ahmed Dipu"
                 id="profileImg"
                 onerror="
@@ -849,24 +855,19 @@
               </div>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                 <li>
-                  <i class="fa-solid fa-check text-primary me-2"></i> IT Support
-                  & Troubleshooting
+                  <i class="fa-solid fa-check text-primary me-2"></i> IT Support & Troubleshooting
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-primary me-2"></i> Hardware &
-                  Software Diagnostics
+                  <i class="fa-solid fa-check text-primary me-2"></i> Windows OS & Active Directory
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-primary me-2"></i> Windows OS
-                  & Office 365 Admin
+                  <i class="fa-solid fa-check text-primary me-2"></i> Microsoft 365 & Remote Support
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-primary me-2"></i> Computer
-                  Maintenance & Setup
+                  <i class="fa-solid fa-check text-primary me-2"></i> Computer Maintenance & Setup
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-primary me-2"></i> User
-                  Support & Helpdesk
+                  <i class="fa-solid fa-check text-primary me-2"></i> User Support & Helpdesk
                 </li>
               </ul>
             </div>
@@ -883,24 +884,19 @@
               </div>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                 <li>
-                  <i class="fa-solid fa-check text-info me-2"></i> LAN / WAN
-                  Configuration
+                  <i class="fa-solid fa-check text-info me-2"></i> TCP/IP, DNS, DHCP & Subnetting
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-info me-2"></i> CCTV
-                  Installation & Maintenance
+                  <i class="fa-solid fa-check text-info me-2"></i> LAN/WAN & VLAN Configuration
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-info me-2"></i> Fiber Optic
-                  Basics & Splicing Support
+                  <i class="fa-solid fa-check text-info me-2"></i> Cisco Packet Tracer & Routing
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-info me-2"></i> Routers,
-                  Switches & IP Routing
+                  <i class="fa-solid fa-check text-info me-2"></i> CCTV Installation & Maintenance
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-info me-2"></i> Network
-                  Troubleshooting
+                  <i class="fa-solid fa-check text-info me-2"></i> Fiber Optic Basic Knowledge
                 </li>
               </ul>
             </div>
@@ -917,24 +913,19 @@
               </div>
               <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small">
                 <li>
-                  <i class="fa-solid fa-check text-success me-2"></i> HTML5,
-                  CSS3 & Bootstrap 5
+                  <i class="fa-solid fa-check text-success me-2"></i> Basic Web Maintenance (HTML/WP)
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-success me-2"></i> JavaScript
-                  (DOM, ES6, APIs)
+                  <i class="fa-solid fa-check text-success me-2"></i> HTML5, CSS3 & Bootstrap 5
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-success me-2"></i> Python
-                  Scripting & Automation
+                  <i class="fa-solid fa-check text-success me-2"></i> JavaScript Basics
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-success me-2"></i> WordPress
-                  & Website Maintenance
+                  <i class="fa-solid fa-check text-success me-2"></i> Python Scripting & Automation
                 </li>
                 <li>
-                  <i class="fa-solid fa-check text-success me-2"></i> Git &
-                  GitHub Version Control
+                  <i class="fa-solid fa-check text-success me-2"></i> Git & GitHub Version Control
                 </li>
               </ul>
             </div>
@@ -977,13 +968,13 @@
             <div class="col-md-4">
               <div class="d-flex justify-content-between mb-1">
                 <span class="fw-semibold">Italian</span>
-                <span class="text-primary fw-bold">A2 - Basic</span>
+                <span class="text-primary fw-bold">B1 - Pre Intermediate</span>
               </div>
               <div class="progress" style="height: 8px">
                 <div
                   class="progress-bar bg-primary progress-bar-animated"
                   role="progressbar"
-                  style="width: 45%"
+                  style="width: 55%"
                 ></div>
               </div>
             </div>
@@ -1089,16 +1080,13 @@
                 </h6>
                 <ul class="small text-body-secondary ps-3 mb-0">
                   <li>
-                    Served international and local customers with professional
-                    hospitality.
+                    Served customers and managed orders.
                   </li>
                   <li>
-                    Assisted with bar service, inventory supervision, and drink
-                    preparation.
+                    Assisted with bar service and drink preparation.
                   </li>
                   <li>
-                    Maintained a spotless, organized, and hygienic work area
-                    under fast-paced environments.
+                    Maintained a clean and organized work area.
                   </li>
                 </ul>
               </div>
@@ -1118,16 +1106,13 @@
                 </h6>
                 <ul class="small text-body-secondary ps-3 mb-0">
                   <li>
-                    Maintained computer systems, corporate networks, and CCTV
-                    surveillance setups.
+                    Configured and maintained LAN, routers, switches, and CCTV systems.
                   </li>
                   <li>
-                    Diagnosed and troubleshot hardware, software, and
-                    connectivity issues proactively.
+                    Diagnosed hardware, Windows OS, connectivity, and software issues.
                   </li>
                   <li>
-                    Delivered technical desk support and guidance to everyday
-                    system users.
+                    Provided prompt in-person and remote technical support to users.
                   </li>
                 </ul>
               </div>
@@ -1149,16 +1134,13 @@
                 </h6>
                 <ul class="small text-body-secondary ps-3 mb-0">
                   <li>
-                    Maintained rigorous project documentation, audits, and
-                    operational quality reports.
+                    Maintained records, reports, and project documentation.
                   </li>
                   <li>
-                    Coordinated smoothly with overseas clients and international
-                    engineering teams.
+                    Coordinated with overseas clients and teams.
                   </li>
                   <li>
-                    Optimized overall workflow efficiency and standardized
-                    routine project deliveries.
+                    Improved workflow efficiency and communicated project updates.
                   </li>
                 </ul>
               </div>
@@ -1181,12 +1163,13 @@
                 </h6>
                 <ul class="small text-body-secondary ps-3 mb-0">
                   <li>
-                    Assisted in optical fiber cable installation, testing, and
-                    physical line maintenance.
+                    Assisted in fiber optic cable splicing, termination, and testing.
                   </li>
                   <li>
-                    Supported network troubleshooting, client-side router
-                    setups, and link integrity verification.
+                    Configured client-side routers, modems, and basic IP/DNS settings.
+                  </li>
+                  <li>
+                    Supported team with network cabling and routine troubleshooting.
                   </li>
                 </ul>
               </div>
@@ -1555,7 +1538,7 @@
                 <span class="py-keyword">def</span>
                 <span class="py-func">__init__</span>(self): self.name =
                 <span class="py-str">"Eyasin Ahmed Dipu"</span> self.role =
-                <span class="py-str">"IT Technician | Web Developer"</span>
+                <span class="py-str">"IT Support Specialist | Network Technician"</span>
                 self.location =
                 <span class="py-str">"Cagliari, Sardinia, Italy"</span>
                 self.skills = [<span class="py-str">"Networking"</span>,
@@ -1695,6 +1678,41 @@
         </div>
       </div>
     </section>
+
+    <!-- ==========================================================
+         AI PITCH GENERATOR MODAL (NEW FEATURE)
+         ========================================================== -->
+    <div class="modal fade" id="aiPitchModal" tabindex="-1" aria-labelledby="aiPitchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white border-0">
+            <h5 class="modal-title fw-bold" id="aiPitchModalLabel">
+              <i class="fa-solid fa-robot me-2"></i> AI Elevator Pitch Generator
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center p-4">
+            <p class="text-muted mb-4">
+              Are you a recruiter? Enter your company details below, and Gemini AI will instantly generate a tailored cover letter pitch demonstrating why my skills align perfectly with your needs!
+            </p>
+            <div class="row g-3 mb-3">
+              <div class="col-md-6 text-start">
+                <label class="form-label fw-semibold small">Target Company</label>
+                <input type="text" id="companyNameInput" class="form-control" placeholder="e.g. Cisco Italy, Telecom Italia">
+              </div>
+              <div class="col-md-6 text-start">
+                <label class="form-label fw-semibold small">Target Role</label>
+                <input type="text" id="jobRoleInput" class="form-control" placeholder="e.g. IT Support Specialist">
+              </div>
+            </div>
+            <button id="generatePitchBtn" class="btn btn-info text-white fw-bold px-4 rounded-pill mb-3 shadow-sm" onclick="generateAIPitch()">
+              <i class="fa-solid fa-wand-magic-sparkles me-1"></i> Generate My Pitch
+            </button>
+            <div id="pitchOutput" class="d-none mt-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ==========================================================
          FOOTER
@@ -1838,7 +1856,7 @@
 <span class="py-keyword">class</span> <span class="py-func">ITProfessional</span>:
     <span class="py-keyword">def</span> <span class="py-func">__init__</span>(self):
         self.name = <span class="py-str">"Eyasin Ahmed Dipu"</span>
-        self.role = <span class="py-str">"IT Technician | Web Developer"</span>
+        self.role = <span class="py-str">"IT Support Specialist | Network Technician"</span>
         self.location = <span class="py-str">"Cagliari, Sardinia, Italy"</span>
         self.skills = [<span class="py-str">"Networking"</span>, <span class="py-str">"CCTV"</span>, <span class="py-str">"Python"</span>, <span class="py-str">"Web Dev"</span>]
 
@@ -1948,17 +1966,17 @@ candidate = ITProfessional()
           Location: Cagliari, Sardegna, Italy
           Phone: +39 3500 946931
           Email: eyasinitaly@gmail.com
-          Languages: Bengali (Native), English (B2 Intermediate), Italian (A2 Basic).
+          Languages: Bengali (Native), English (B2 Intermediate), Italian (B1 Pre Intermediate).
           
-          Profile: IT Support Technician with hands-on experience in hardware/software troubleshooting, networking, CCTV systems, and technical support. Knowledgeable in web development (HTML, CSS, Bootstrap, WordPress, Python).
+          Profile: Motivated IT Support Technician with hands-on experience in hardware diagnostics, network troubleshooting, and CCTV systems. Skilled in Windows environments, TCP/IP, Cisco routing/switching basics, and end-user support. Seeking an IT Support or Network Technician role in Italy.
           
-          Skills: IT Support & Systems, Hardware & Software Diagnostics, Windows OS & Office 365, LAN/WAN Configuration, CCTV Installation, Fiber Optic Basics, HTML5/CSS3/Bootstrap5, JavaScript, Python Scripting, WordPress.
+          Skills: IT Support & Troubleshooting, Windows OS & Active Directory, Microsoft 365 & Remote Support, TCP/IP, DNS, DHCP & Subnetting, LAN/WAN & VLAN Configuration, Cisco Packet Tracer & Routing, CCTV Installation & Maintenance, Fiber Optic Basic Knowledge, Basic Web Maintenance (HTML/WP).
           
           Experience:
           1. Waiter & Bar Assistant at Art Of Sushi Cagliari (May 2026 - Present)
-          2. IT Technician at Big Boss (2023 - 2025): Maintained systems, networks, CCTV. Troubleshot issues.
-          3. Quality Assurance Executive at Tekarsh LLC (2019 - 2022): Maintained project docs, coordinated with clients.
-          4. Technical Assistant (Intern) at Bismillah Telecom Service (BTS) (2019): Assisted in fiber optic installation.
+          2. IT Technician at Big Boss (2023 - 2025): Configured LAN, routers, switches, CCTV. Diagnosed hardware/Windows issues.
+          3. Quality Assurance Executive at Tekarsh LLC (2019 - 2022): Maintained records, coordinated with clients.
+          4. Technical Assistant (Intern) at Bismillah Telecom Service (BTS) (2019): Assisted in fiber optic splicing and basic IP/DNS settings.
           
           Education:
           - BSc in Computer Science & Engineering, Sonargaon University (2023 - Present)
@@ -2015,7 +2033,65 @@ candidate = ITProfessional()
       }
 
       // ==========================================
-      // 6. SCROLL TO TOP LOGIC & AOS INIT
+      // 6. AI PITCH GENERATOR LOGIC
+      // ==========================================
+      async function generateAIPitch() {
+          const companyName = document.getElementById('companyNameInput').value.trim();
+          const jobRole = document.getElementById('jobRoleInput').value.trim();
+          const outputDiv = document.getElementById('pitchOutput');
+          const generateBtn = document.getElementById('generatePitchBtn');
+
+          outputDiv.classList.remove('d-none');
+
+          if (!companyName || !jobRole) {
+              outputDiv.innerHTML = '<div class="alert alert-warning py-2 mb-0"><i class="fa-solid fa-triangle-exclamation me-2"></i>Please enter both a Company Name and a Job Role.</div>';
+              return;
+          }
+
+          // Set UI to loading state
+          generateBtn.disabled = true;
+          generateBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Generating...';
+          outputDiv.innerHTML = `<div class="text-center py-4"><div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span></div><p class="mt-2 text-muted small">Gemini AI is crafting a personalized pitch based on Eyasin's CV...</p></div>`;
+
+          // Construct the Prompt instructing the LLM
+          const prompt = `You are Eyasin Ahmed Dipu, an IT Support Specialist & Network Technician based in Cagliari, Italy. 
+          Write a concise, professional, and highly enthusiastic elevator pitch (maximum 2 short paragraphs) addressing a recruiter at "${companyName}" who is hiring for the position of "${jobRole}". 
+          Use the following details from my actual CV to highlight why I am an excellent fit for the role:
+          - Skills: IT Support, Hardware/Software Diagnostics, Windows OS, LAN/WAN, CCTV, Cisco CCNA, CompTIA A+.
+          - Experience: IT Technician at Big Boss (Maintained LAN, routers, CCTV, user support).
+          - Education: BSc in CSE, Diploma in Telecommunication Engineering.
+          Keep the tone confident but polite. Focus on how my skills can solve problems for their company. Do not include placeholders like [Your Phone Number] or [Email], just sign off warmly with "Eyasin Ahmed Dipu".`;
+
+          const apiKey = ""; // API key is securely provided by the Canvas environment automatically
+          const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+          try {
+              const response = await fetch(apiUrl, {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({
+                      contents: [{ parts: [{ text: prompt }] }]
+                  })
+              });
+              const result = await response.json();
+              if (result.candidates && result.candidates[0] && result.candidates[0].content) {
+                  const pitchText = result.candidates[0].content.parts[0].text;
+                  outputDiv.innerHTML = `<div class="p-4 bg-body-tertiary border border-info rounded-3 text-start shadow-sm" style="white-space: pre-wrap; font-size: 0.95rem; line-height: 1.6;">${pitchText}</div>`;
+              } else {
+                  throw new Error("Invalid response from API");
+              }
+          } catch (error) {
+              console.error("Pitch Gen Error:", error);
+              outputDiv.innerHTML = '<div class="alert alert-danger py-2 mb-0"><i class="fa-solid fa-circle-exclamation me-2"></i>Failed to generate pitch. Please check your connection or try again later.</div>';
+          } finally {
+              // Restore UI state
+              generateBtn.disabled = false;
+              generateBtn.innerHTML = '<i class="fa-solid fa-wand-magic-sparkles me-1"></i> Generate My Pitch';
+          }
+      }
+
+      // ==========================================
+      // 7. SCROLL TO TOP LOGIC & AOS INIT
       // ==========================================
       // Initialize AOS (Animate on Scroll)
       AOS.init({
