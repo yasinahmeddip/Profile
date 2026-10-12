@@ -735,14 +735,6 @@
               >
                 <i class="fa-brands fa-github me-1"></i> GitHub
               </a>
-              <button
-                type="button"
-                class="btn btn-info btn-sm rounded-pill text-white fw-medium shadow-sm"
-                data-bs-toggle="modal"
-                data-bs-target="#aiPitchModal"
-              >
-                <i class="fa-solid fa-wand-magic-sparkles me-1"></i> AI Pitch Generator
-              </button>
             </div>
           </div>
           <div class="col-lg-3 text-center">
@@ -1623,6 +1615,7 @@
                     >
                     <input
                       type="text"
+                      id="senderName"
                       class="form-control"
                       placeholder="e.g. Mario Rossi"
                       required
@@ -1634,6 +1627,7 @@
                     >
                     <input
                       type="email"
+                      id="senderEmail"
                       class="form-control"
                       placeholder="e.g. mario@company.it"
                       required
@@ -1643,6 +1637,7 @@
                     <label class="form-label small fw-semibold">Subject</label>
                     <input
                       type="text"
+                      id="senderSubject"
                       class="form-control"
                       placeholder="IT Job Opportunity / Project Inquiry"
                       required
@@ -1651,6 +1646,7 @@
                   <div class="col-12">
                     <label class="form-label small fw-semibold">Message</label>
                     <textarea
+                      id="senderMessage"
                       class="form-control"
                       rows="4"
                       placeholder="Write your message here..."
@@ -1886,10 +1882,28 @@ candidate = ITProfessional()
       }
 
       // ==========================================
-      // 4. CONTACT FORM
+      // 4. CONTACT FORM (SEND TO WHATSAPP)
       // ==========================================
       function handleFormSubmit(event) {
         event.preventDefault();
+
+        // Get values from the form inputs
+        const name = document.getElementById('senderName').value;
+        const email = document.getElementById('senderEmail').value;
+        const subject = document.getElementById('senderSubject').value;
+        const message = document.getElementById('senderMessage').value;
+
+        // Format the message for WhatsApp
+        const whatsappNumber = "393500946931";
+        const whatsappText = `Hello Eyasin,\nI am reaching out from your Digital CV.\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n\n*Message:*\n${message}`;
+
+        // Create the WhatsApp API URL
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappText)}`;
+
+        // Open WhatsApp in a new tab/window
+        window.open(whatsappURL, '_blank');
+
+        // Show success alert on the website
         const alertBox = document.getElementById("formSuccessAlert");
         alertBox.classList.remove("d-none");
         event.target.reset();
